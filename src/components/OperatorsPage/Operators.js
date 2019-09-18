@@ -20,7 +20,7 @@ border-radius:5px;
 box-sizing:border-box
 `
 const Headline = styled.h1 `
-margin:50px;
+margin:100px;
 text-align:center
 ` 
 
@@ -58,7 +58,6 @@ class Operators extends Component {
         const operators= this.state.operators
         
         return(
-            
             <Headline>
                 Выберите оператора
             
@@ -68,10 +67,8 @@ class Operators extends Component {
                 <Operator name={operators[1].name} link={operators[1].link} logo={operators[1].logo} /> 
                 <Operator name={operators[2].name} link={operators[2].link} logo={operators[2].logo} /> 
                 <Operator name={operators[3].name} link={operators[3].link} logo={operators[3].logo} /> 
-                
             </OperatorsStyle>
-            
-            </Headline>
+             </Headline>
         )
     }
 }
